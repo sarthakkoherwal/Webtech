@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="checker" method="POST">
+    {% csrf_token %}
+    username: <input type="text" name="username">
+    password: <input type="password" name="password">
+    email: <input type="email" name=""email>
+    <button>create profile</button>
+</form>
+
+{% endblock %}
